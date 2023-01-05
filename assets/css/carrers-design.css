@@ -3,53 +3,141 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /*  */
 
 
-body{
+body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'poppins', Arial, Helvetica, sans-serif;
@@ -61,65 +149,82 @@ body{
 /*  start header section */
 
 /* section text and image  */
-.container{
-    max-width: 1206px;
+.container {
+    max-width: 1238px;
     margin: 0 auto;
     /* padding: 0 109px; */
-    padding: 0 79px;
+    padding: 0 100px;
 
 }
-.logo_img{
+
+.logo_img {
+    width: 260px;
     padding: 45px 0 25px 0;
 }
-.flex-container{
+
+.flex-container {
     display: flex;
     width: 100%;
 }
-.left-text,.right-img{
+
+.left-text,
+.right-img {
     width: 50%;
 }
-.left-text{
+
+.left-text {
     padding-top: 75px;
     padding-right: 100px;
 }
-.left-text h1{
 
-font-weight: 700;
-font-size: 70px;
-line-height: 105px;
+.left-text h1 {
 
-}
-.left-text h2{
-font-weight: 600;
-font-size: 40px;
-line-height: 60px;
-}
-.left-txt-para{
-padding-top: 37px;
-font-size: 22px;
-line-height: 33px;
-}
-
-.view-btn{
- margin-top: 41px;
-background: #ED4E08;
-display: inline-block;
-padding: 20px 0 20px 29px;
-cursor: pointer;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 105px;
 
 }
-.view-btn a{
+
+.left-text h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+
+}
+
+.left-txt-para {
+    padding-top: 37px;
+    font-size: 22px;
+    line-height: 33px;
+    color: #5B5B5B;
+
+}
+
+.view-btn {
+    margin-top: 41px;
+    background: #ED4E08;
+    display: inline-block;
+    padding: 20px 0 20px 29px;
+    cursor: pointer;
+
+}
+.view-btn:hover{
+    text-decoration: underline;
+}
+.view-btn a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 600;
     font-size: 25px;
     line-height: 38px;
 }
-.view-btn svg{
+
+.view-btn svg {
     padding: 0 29px 0 11px;
 }
-.right-img .block_img{
-   
+
+.right-img .block_img {
+
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -128,34 +233,41 @@ cursor: pointer;
 /* section text and image  end */
 
 /* section text about shoptrade(what is shoptrade) */
-.about-shoptrade{
+.about-shoptrade {
     margin: 85px 0 50px 0;
     background: #ED4E08;
 }
-.shoptrade-txt h3{
+
+.shoptrade-txt h3 {
     padding: 66px 0 40px 0;
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
     color: #FFFFFF;
 }
-.shoptrade-txt p{
+
+.shoptrade-txt p {
     padding-bottom: 40px;
     font-size: 22px;
-line-height: 33px;
+    line-height: 33px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
-.shoptrade-txt a{
+
+.shoptrade-txt a {
     display: block;
     padding-bottom: 88px;
-font-weight: 700;
-font-size: 25px;
-line-height: 38px;
-text-decoration-line: underline;
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
 }
-.shoptrade-txt svg{
+.shoptrade-txt a:hover{
+    text-decoration: none;
+}
+
+.shoptrade-txt svg {
     padding-left: 9px;
     width: 12px;
 }
@@ -164,61 +276,76 @@ color: #FFFFFF;
 /* section text about shoptrade(what is shoptrade) end */
 
 /* section text ,featured ,design and engineering */
-.bigleap-text h4{
+.bigleap-text h4 {
     font-weight: 700;
-font-size: 40px;
-line-height: 60px;
-padding-bottom: 15px;
+    font-size: 40px;
+    line-height: 60px;
+    padding-bottom: 15px;
 }
-.bigleap-text h5{
-font-size: 20px;
-line-height: 30px;
-padding-bottom: 40px;
-}
-.bigleap-text p{
+
+.bigleap-text h5 {
     font-size: 20px;
-line-height: 30px;
-padding-bottom: 50px;
+    line-height: 30px;
+    padding-bottom: 40px;
 }
-.tablink{
+
+.bigleap-text p {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 50px;
+}
+
+.sub-btn {
+    display: flex;
+}
+
+.tablink {
     margin-right: 94px;
     padding: 17px 20px;
     border: none;
     background: transparent;
-font-weight: 600;
-font-size: 20px;
-line-height: 30px;
-
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
 }
-.tablink.tab-active{
+
+.tablink.tab-active {
     background: #FFFFFF;
-box-shadow: 0px 2px 4px 1px rgba(57, 57, 57, 0.14);
-border-radius: 10px;
+    box-shadow: 0px 2px 4px 1px rgba(57, 57, 57, 0.14);
+    border-radius: 10px;
 }
 
-#feature{
+#feature {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     column-gap: 65px;
     row-gap: 51px;
     padding-top: 51px;
 }
-.design h6{
-    padding: 20px 124px 17px 29px;
+
+.design h6 {
+    padding: 20px 100px 17px 29px;
     font-size: 20px;
     line-height: 30px;
 }
-.design-para{
-    padding: 0 186px 0px 29px ;
+
+.design-para {
+    display: block;
+    padding: 0 186px 21px 29px;
     color: #7E7E7E;
     font-size: 18px;
-line-height: 27px;
+    line-height: 27px;
 }
-.design{
+
+.design {
     background: #F8F8F8;
-border-radius: 10px;
+    border-radius: 10px;
 }
-.design:hover ,.design-para:hover{
+
+.design:hover,
+.design-para:hover {
     background: #ED4E08;
     color: rgba(255, 255, 255, 0.7);
 }
@@ -227,51 +354,58 @@ border-radius: 10px;
 
 
 
-.section_5{
+.section_5 {
     background: #000000;
     margin-top: 59px;
 }
-.h4_txt h3{
+
+.h4_txt h3 {
     padding: 50px 0 69px 0;
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
-  
+
     color: #FFFFFF;
 }
-.grid-container{
+
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     column-gap: 100px;
     row-gap: 33px;
     padding-bottom: 43px;
 }
-.grid-item h4{
+
+.grid-item h4 {
     padding-top: 9px;
     font-weight: 600;
-font-size: 22px;
-line-height: 33px;
-color: #FFFFFF;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
 }
-.grid-item p{
+
+.grid-item p {
     padding-top: 15px;
     font-size: 18px;
-line-height: 27px;
+    line-height: 27px;
 
-color: #D9D9D9;
+    color: #D9D9D9;
 }
 
 /* section testmonial slide */
-.job-application_txt h3{
-   
+.job-application_txt h3 {
+
     font-weight: 700;
-font-size: 40px;
-line-height: 60px;
-color: #000000;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
 }
-.job-application_txt{
+
+.job-application_txt {
     padding-top: 50px;
 }
+
 /* .testmonial-slide{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -279,8 +413,8 @@ color: #000000;
     background: #F6F6F6;
 }
 .myslide{ */
-    /* display: none; */
-    /* padding: 80px;
+/* display: none; */
+/* padding: 80px;
     text-align: center;
   }
   q{
@@ -322,34 +456,272 @@ color: #000000;
 /* section testmonial slide end */
 
 /* section application and email contact  */
-.application-txt{
+.application-txt {
     background: #ED4E08;
-border-radius: 20px;
-margin: 60px 0 75px 0;
+    border-radius: 20px;
+    margin: 60px 0 75px 0;
 }
-.application-txt h3{
+
+.application-txt h3 {
     text-align: center;
     padding: 56px 0 30px 0;
     font-weight: 700;
-font-size: 40px;
-line-height: 60px;
+    font-size: 40px;
+    line-height: 60px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
-.application-txt p{
+
+.application-txt p {
     text-align: center;
     padding: 0 68px 56px 68px;
     font-weight: 500;
-font-size: 20px;
-line-height: 30px;
-color: #FFFFFF;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
 }
-.application-txt a{
+
+.application-txt a {
     color: #000000;
     text-decoration: none;
 }
-.application-txt a:hover{
+
+.application-txt a:hover {
     text-decoration: underline;
 }
 
 /* section application and email contact end  */
+
+/* start media queries */
+
+/* media query for tab(980px)*/
+@media screen and (max-width:980px) {
+
+     /* section header logo */
+     .logo_img {
+        margin: 0 auto;
+        padding-bottom: 35px;
+    }
+
+    .container {
+        padding: 0 51px;
+    }
+
+    /* section text and image flex */
+    .flex-container {
+        flex-direction: column-reverse;
+    }
+
+    .right-img,
+    .left-text {
+        width: 100%;
+    }
+
+    .left-text {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    /* section text ,featured ,design and engineering */
+    /* .btn-text {
+        margin-top: 30px;
+    } */
+
+    .feature-design-btn {
+        display: flex;
+    }
+
+    /* section text and image end */
+}
+
+/* media query for tablet(768px) */
+@media screen and (max-width:768px) {
+
+   
+    /* section text and image  */
+    .left-txt-para {
+        padding-top: 34px;
+        font-size: 18px;
+    }
+
+    .shoptrade-txt p {
+        font-size: 20px;
+    }
+
+    .bigleap-text h4 {
+        font-size: 35px;
+    }
+
+    /* section section-5 grid container */
+    .grid-item h4 {
+        padding-top: 20px;
+    }
+
+    .h4_txt h3 {
+        font-size: 35px;
+    }
+    .sub-btn{
+        display: block;
+    }
+      .btn-text {
+        margin-top: 30px;
+    }
+    /* section section 5 grid container end */
+    .job-application_txt h3,
+    .application-txt h3 {
+        font-size: 35px;
+    }
+
+    /* section text ,featured ,design and engineering */
+    #feature{
+        row-gap: 20px;
+    }
+}
+
+/* media query for tablet(768px) */
+@media screen and (max-width:520px) {
+
+    /* section header logo */
+    .container {
+        padding: 0 30px;
+    }
+
+    .logo_img {
+        /* width: 185px; */
+        /*margin: 0 auto; */
+        padding-bottom: 35px;
+    }
+
+    /* section text and image  */
+    .left-text {
+        padding-top: 30px;
+    }
+
+    .left-text h1 {
+        line-height: 60px;
+        font-size: 40px;
+    }
+
+    .left-text h2 {
+        padding-top: 10px;
+        font-size: 25px;
+        line-height: 22px;
+    }
+
+    .left-txt-para {
+        padding-top: 15px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .view-btn {
+        margin-top: 20px;
+        padding: 15px 0 16px 35px;
+    }
+
+    .view-btn a {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .about-shoptrade {
+        margin: 46px 0 20px 0;
+    }
+
+    .shoptrade-txt h3 {
+        padding: 25px 0 15px 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .shoptrade-txt p {
+        font-size: 15px;
+        line-height: 22px;
+        padding-bottom: 10px;
+    }
+
+    .shoptrade-txt a {
+        font-size: 15px;
+        line-height: 22px;
+        padding-bottom: 34px;
+    }
+
+    .bigleap-text h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .bigleap-text h5 {
+        font-size: 15px;
+        line-height: 22px;
+        padding-bottom: 10px;
+    }
+
+    .bigleap-text p {
+        font-size: 15px;
+        line-height: 22px;
+        padding-bottom: 29px;
+    }
+
+    .tablink {
+        font-size: 15px;
+        line-height: 22px;
+        padding: 9px 25px;
+    }
+
+    /* section section 5 grid container */
+    .grid-container {
+        padding-bottom: 25px;
+    }
+
+    .grid-item h4 {
+        font-size: 18px;
+        line-height: 27px;
+        padding-top: 15px;
+    }
+
+    .h4_txt h3 {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 25px 0 40px 0;
+    }
+
+    .grid-item p {
+        font-size: 15px;
+        line-height: 22px;
+        padding-top: 12px;
+    }
+
+    /* section section 5 grid container end */
+    .job-application_txt h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .application-txt{
+        margin-top: 25px;
+    }
+    .application-txt h3 {
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+    .application-txt p {
+        padding: 0 27px 26px 31px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    /* section text ,featured ,design and engineering */
+   
+    .design h6 {
+        font-size: 15px;
+        line-height: 22px;
+        padding: 20px 55px 5px 29px;
+    }
+
+    .design-para {
+        font-size: 14px;
+        line-height: 21px;
+        padding-bottom: 19px;
+    }
+}

@@ -136,6 +136,9 @@ table {
 
 /*  */
 
+:root{
+    --orange-color:#ED4E08;
+}
 
 body {
     margin: 0;
@@ -201,34 +204,50 @@ body {
 }
 
 .view-btn {
-    margin-top: 41px;
-    background: #ED4E08;
-    display: inline-block;
-    padding: 20px 0 20px 29px;
-    cursor: pointer;
+    background: var(--orange-color);
     border-radius: 10px;
-
-}
-.view-btn:hover{
-    text-decoration: underline;
-}
-.view-btn a {
-    color: #FFFFFF;
+    border: 1px solid var(--orange-color);
+    display: inline-block;
     text-decoration: none;
+    padding: 20px 29px;
+    margin-top: 41px;
+    color: #FFFFFF;
+}
+
+.view-btn .btn-txt {
     font-weight: 600;
     font-size: 25px;
     line-height: 38px;
+    transition: all 0.3s ease-in;
 }
 
-.view-btn svg {
-    padding: 0 29px 0 11px;
+.view-btn .btn-icon {
+    display: inline-block;
+    transform: translateX(0px);
+    transition: all 0.3s ease-in;
 }
 
-.right-img .block_img {
+.view-btn:hover .btn-icon {
+    transform: translateX(10px);
+}
+
+.view-btn:hover {
+    background: #FFFFFF;
+    border: 1px solid var(--orange-color);
+    color: var(--orange-color);
+}
+
+.view-btn:hover svg path {
+    fill: var(--orange-color);
+}
+
+
+
+.block_img {
 
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+
 }
 
 /* section text and image  end */
@@ -236,7 +255,7 @@ body {
 /* section text about shoptrade(what is shoptrade) */
 .about-shoptrade {
     margin: 85px 0 50px 0;
-    background: #ED4E08;
+    background: var(--orange-color);
 }
 
 .shoptrade-txt h3 {
@@ -255,7 +274,7 @@ body {
     color: #FFFFFF;
 }
 
-.shoptrade-txt a {
+.btn_class{
     display: block;
     padding-bottom: 88px;
     font-weight: 700;
@@ -264,14 +283,23 @@ body {
     text-decoration-line: underline;
     color: #FFFFFF;
 }
-.shoptrade-txt a:hover{
+
+.btn_class:hover {
     text-decoration: none;
 }
-
-.shoptrade-txt svg {
+.btn_class .arrow-icon {
+    display: inline-block;
+    transform: translateX(0px);
+    transition: all 0.3s ease-in;
+}
+.btn_class:hover .arrow-icon{
+    transform: translateX(15px);
+} 
+.btn_class svg {
     padding-left: 9px;
     width: 12px;
 }
+
 
 
 /* section text about shoptrade(what is shoptrade) end */
@@ -311,18 +339,20 @@ body {
     cursor: pointer;
 }
 
-.tablink.tab-active {
+.tablink.active {
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 1px rgba(57, 57, 57, 0.14);
     border-radius: 10px;
 }
-
-#feature {
+.position-btn{
+    min-height: 650px;
+}
+.hire-position.tabcontent-active.tabcontent-active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 65px;
-    row-gap: 51px;
+    row-gap: 30px;
     padding-top: 51px;
 }
 
@@ -338,17 +368,28 @@ body {
     color: #7E7E7E;
     font-size: 18px;
     line-height: 27px;
+
 }
 
 .design {
     background: #F8F8F8;
     border-radius: 10px;
+    /* margin: 20px 0; */
 }
 
-.design:hover,
-.design-para:hover {
+.design:hover {
     background: #ED4E08;
-    color: rgba(255, 255, 255, 0.7);
+    color: #FFFFFF
+}
+.design:hover  .design-para{
+    color: #FFFFFF;
+}
+.hire-position {
+    display: none;
+}
+
+.hire-position.tabcontent-active {
+    display: block;
 }
 
 /* section text ,featured ,design and engineering end */
@@ -407,53 +448,72 @@ body {
     padding-top: 50px;
 }
 
-/* .testmonial-slide{
+.testmonial-slide {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    position: relative;
-    background: #F6F6F6;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    column-gap: 70px;
+    row-gap: 20px;
 }
-.myslide{ */
-/* display: none; */
-/* padding: 80px;
-    text-align: center;
-  }
-  q{
-    font-style: italic;
-  }
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    
-    width: auto;
-    margin-top: -30px;
-    padding: 56px;
-    color: #888;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .dot-container {
-    text-align: center;
-    padding: 20px;
-    background: #ddd;
-} */
 
-/* The dots/bullets/indicators */
-/* .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.flex-test-container {
+    display: flex;
+    align-items: center;
+    /* margin-top: 20px; */
 }
-.active, .dot:hover {
-    background-color: #717171;
-  } */
+
+.text {
+    padding-left: 15px;
+
+}
+
+blockquote {
+    font-style: italic;
+    padding: 29px 29px 51px 28px;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.show-testmonia {
+    background: #F8F8F8;
+    border-radius: 20px;
+    /* margin-right: 75px; */
+}
+
+.text .mt {
+    padding-bottom: 5px;
+}
+
+.text .th {
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: rgba(0, 0, 0, 0.7);
+
+
+}
+
+.sub_flex-container {
+    margin-top: 50px;
+}
+
+.location {
+    padding-left: 106px;
+}
+
+.slide-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 45px;
+}
+
+.slide-bar img {
+    padding-left: 28px;
+}
+
 /* section testmonial slide end */
 
 /* section application and email contact  */
@@ -494,15 +554,25 @@ body {
 /* section application and email contact end  */
 
 /* start media queries */
+/* media query for desktop(1042px) */
+@media screen and (max-width:1042px) {
+
+    .view-btn {
+        padding: 20px 17px;
+    }
+
+    .location {
+        padding-left: 80px;
+    }
+}
 
 /* media query for tab(980px)*/
 @media screen and (max-width:980px) {
 
-     /* section header logo */
-     /* .logo_img img{
+    /* section header logo */
+    .logo_img {
         margin: 0 auto;
-        padding-bottom: 35px;
-    } */
+    }
 
     .container {
         padding: 0 51px;
@@ -518,9 +588,22 @@ body {
         width: 100%;
     }
 
+    .block_img {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
     .left-text {
         padding-right: 0;
         text-align: center;
+    }
+
+    .view-btn svg {
+        padding: 0 29px 0 11px;
     }
 
     /* section text ,featured ,design and engineering */
@@ -532,15 +615,22 @@ body {
         display: flex;
     }
 
+    .location {
+        padding-left: 38px;
+    }
+
     /* section text and image end */
+
+
 }
 
 /* media query for tablet(768px) */
 @media screen and (max-width:768px) {
 
-   .logo_img{
-    margin: 0 auto;
-   }
+    .logo_img {
+        margin: 0 auto;
+    }
+
     /* section text and image  */
     .left-txt-para {
         padding-top: 34px;
@@ -563,12 +653,15 @@ body {
     .h4_txt h3 {
         font-size: 35px;
     }
-    .sub-btn{
+
+    .sub-btn {
         display: block;
     }
-      .btn-text {
+
+    .btn-text {
         margin-top: 30px;
     }
+
     /* section section 5 grid container end */
     .job-application_txt h3,
     .application-txt h3 {
@@ -576,12 +669,18 @@ body {
     }
 
     /* section text ,featured ,design and engineering */
-    #feature{
-        row-gap: 20px;
+
+
+    .hide-testmonia {
+        display: none;
+    }
+
+    .location {
+        padding-left: 73px;
     }
 }
 
-/* media query for tablet(768px) */
+/* media query for tablet(520px) */
 @media screen and (max-width:520px) {
 
     /* section header logo */
@@ -592,12 +691,14 @@ body {
     .logo_img {
         width: 185px;
         /*margin: 0 auto; */
-       padding: 26px 0 35px 0;
+        padding: 26px 0 35px 0;
     }
-    .logo_img img{
+
+    .logo_img img {
         width: 185px;
         margin: 0 auto;
     }
+
     /* section text and image  */
     .left-text {
         padding-top: 30px;
@@ -703,9 +804,11 @@ body {
         font-size: 20px;
         line-height: 30px;
     }
-    .application-txt{
+
+    .application-txt {
         margin-top: 25px;
     }
+
     .application-txt h3 {
         font-size: 25px;
         line-height: 38px;
@@ -718,7 +821,7 @@ body {
     }
 
     /* section text ,featured ,design and engineering */
-   
+
     .design h6 {
         font-size: 15px;
         line-height: 22px;
@@ -730,4 +833,20 @@ body {
         line-height: 21px;
         padding-bottom: 19px;
     }
+
+    blockquote {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .text .mt {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .text .th {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
 }

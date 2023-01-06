@@ -156,7 +156,7 @@ body {
     max-width: 1238px;
     margin: 0 auto;
     /* padding: 0 109px; */
-    padding: 0 100px;
+    padding: 0 50px;
 
 }
 
@@ -678,7 +678,7 @@ blockquote {
     }
 
     .location {
-        padding-left: 73px;
+        padding-left: 104px;
     }
 }
 
@@ -700,7 +700,9 @@ blockquote {
         width: 185px;
         margin: 0 auto;
     }
-
+    .block_img{
+        width: 100%;
+    }
     /* section text and image  */
     .left-text {
         padding-top: 30px;
@@ -725,7 +727,7 @@ blockquote {
 
     .view-btn {
         margin-top: 20px;
-        padding: 15px 0 16px 18px;
+        padding: 15px 0 16px 5px;
     }
 
     .view-btn a {
@@ -776,11 +778,25 @@ blockquote {
         font-size: 15px;
         line-height: 22px;
         padding: 9px 25px;
+        margin-right: 0;
     }
-
+    .testmonial-slide{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+    }
+    .flex-test-container{
+        flex-direction: column;
+    }
+    .location{
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+    .text{
+        margin-top: 10px;
+    }
     /* section section 5 grid container */
     .grid-container {
         padding-bottom: 25px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
     }
 
     .grid-item h4 {
@@ -823,7 +839,9 @@ blockquote {
     }
 
     /* section text ,featured ,design and engineering */
-
+    .hire-position.tabcontent-active.tabcontent-active{
+        grid-template-columns: repeat(auto-fill, minmax(245px, 1fr))
+    }
     .design h6 {
         font-size: 15px;
         line-height: 22px;

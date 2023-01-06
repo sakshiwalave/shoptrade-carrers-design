@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Poppins:wght@500&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/index.css">
     <title>Carrers-design</title>
 </head>
@@ -38,14 +39,17 @@
                         inspired by your co-workers and projects?
                         This might be the perfect team for you!
                     </p>
-                    <div class="view-btn">
-                        <a href="">View all open positions <svg class="arrow-right" width="7" height="13"
-                                viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- <div class="view-btn"> -->
+                    <a class="view-btn" href="#leap_text"><span class="btn-txt"> View all open positions </span>
+                        <span> <svg class="btn-icon" width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0.393299 0.290634C0.143496 0.511768 0.000309404 0.82991 0.000309419 1.16355C0.000309431 1.44667 0.103206 1.71956 0.289783 1.93186L4.25439 6.44349L0.295052 10.8917C0.104601 11.1051 -6.33341e-08 11.3802 -5.08366e-08 11.6661C-3.63477e-08 11.9976 0.141947 12.3143 0.38989 12.5353C0.603121 12.7248 0.877253 12.8291 1.16146 12.8291C1.49293 12.8291 1.80905 12.687 2.02833 12.4398L6.6723 7.22249C6.86275 7.00926 6.96735 6.7342 6.96735 6.44829C6.96735 6.16486 6.86461 5.89182 6.67756 5.67952L2.0336 0.395235C1.82858 0.161859 1.54515 0.0223913 1.23584 0.00240034C0.926221 -0.0172797 0.62745 0.0845318 0.393299 0.290634Z"
                                     fill="white" />
-                            </svg></a>
-                    </div>
+                            </svg>
+                        </span>
+                    </a>
+                    <!-- </div> -->
                 </div>
                 <div class="right-img">
                     <img class="block_img" src="./assets/images/right-group-img.jpg" alt="right-group-img">
@@ -65,12 +69,13 @@
                     We are an agile, motivated and a people-focused team equipped with diverse skills to adapt and
                     succeed in the fast changing world of commerce.
                 </p>
-                <a href="">View more about us <svg class="arrow-right" width="7" height="13" viewBox="0 0 7 13"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a class="btn_class" href=""><span class="about-txt"> View more about us</span>
+                  <span class="arrow-icon">  <svg  width="7" height="13" viewBox="0 0 7 13" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.393299 0.290634C0.143496 0.511768 0.000309404 0.82991 0.000309419 1.16355C0.000309431 1.44667 0.103206 1.71956 0.289783 1.93186L4.25439 6.44349L0.295052 10.8917C0.104601 11.1051 -6.33341e-08 11.3802 -5.08366e-08 11.6661C-3.63477e-08 11.9976 0.141947 12.3143 0.38989 12.5353C0.603121 12.7248 0.877253 12.8291 1.16146 12.8291C1.49293 12.8291 1.80905 12.687 2.02833 12.4398L6.6723 7.22249C6.86275 7.00926 6.96735 6.7342 6.96735 6.44829C6.96735 6.16486 6.86461 5.89182 6.67756 5.67952L2.0336 0.395235C1.82858 0.161859 1.54515 0.0223913 1.23584 0.00240034C0.926221 -0.0172797 0.62745 0.0845318 0.393299 0.290634Z"
                             fill="white" />
-                    </svg></a>
+                    </svg></span></a>
             </div>
 
         </div>
@@ -80,7 +85,7 @@
     <!-- section text ,featured ,design and engineering -->
     <section>
         <div class="container">
-            <div class="bigleap-text">
+            <div class="bigleap-text" id="leap_text">
                 <h4>Take the next big leap in your career!
                 </h4>
                 <h5>We are on the lookout for solution-oriented, disruptive minds to be a part of our dynamic,
@@ -91,40 +96,69 @@
                 <div class="position-btn">
                     <div class="sub-btn">
                         <div class="feature-design-btn">
-                        <button class="tablink tab-active">Featured</button>
-                        <button class="tablink">Design (02)</button>
+                            <button class="tablink active">Featured</button>
+                            <button class="tablink">Design (02)</button>
                         </div>
                         <button class="tablink btn-text">Engineering (04)</button>
                     </div>
-                    <div id="feature" class="tab-content tabcontent-active">
-                        <div class="design">
-                            <h6>Mid - level product 
-                                designer</h6>
+                    <div class="num-position">
+                        <div class="hire-position tabcontent-active">
+
+                            <div class="design ">
+                                <h6>Junior Frontend
+                                    Developer</h5>
+                                    <span class="design-para">Banglore, India</span>
+                            </div>
+
+                            <div class="design ">
+                                <h6>Senior Frontend
+                                    Manager</h6>
                                 <span class="design-para">Banglore, India</span>
-                        </div>
-                        <div class="design">
-                            <h6>Senior UI Designer</h6>
-                            <span class="design-para">Banglore, India</span>
-                        </div>
-                        <div class="design">
-                            <h6>Software Engineer: 
-                                Python/Django</h6>
+                            </div>
+                            <div class="design ">
+                                <h6>Mid - level product
+                                    designer</h6>
                                 <span class="design-para">Banglore, India</span>
-                        </div>
-                        <div class="design">
-                            <h6>Junior Frontend 
-                                Developer</h5>
+                            </div>
+                            <div class="design ">
+                                <h6>Senior UI Designer</h6>
                                 <span class="design-para">Banglore, India</span>
-                        </div>
-                        <div class="design">
-                            <h6>Mid Level - Frontend 
-                                Engineer (Remote)</h6>
+                            </div>
+                            <div class="design ">
+                                <h6>Software Engineer:
+                                    Python/Django</h6>
                                 <span class="design-para">Banglore, India</span>
-                        </div>
-                        <div class="design">
-                            <h6>Senior Frontend 
-                                Manager</h6>
+                            </div>
+                            <div class="design ">
+                                <h6>Mid Level - Frontend
+                                    Engineer (Remote)</h6>
                                 <span class="design-para">Banglore, India</span>
+                            </div>
+                        </div>
+                        <!-- design pisition -->
+                        <div class="hire-position">
+                            <div class="design ">
+                                <h6>Mid - level product
+                                    designer</h6>
+                                <span class="design-para">Banglore, India</span>
+                            </div>
+                            <div class="design ">
+                                <h6>Senior UI Designer</h6>
+                                <span class="design-para">Banglore, India</span>
+                            </div>
+                        </div>
+                        <!-- engineer position -->
+                        <div class="hire-position">
+                            <div class="design ">
+                                <h6>Software Engineer:
+                                    Python/Django</h6>
+                                <span class="design-para">Banglore, India</span>
+                            </div>
+                            <div class="design ">
+                                <h6>Mid Level - Frontend
+                                    Engineer (Remote)</h6>
+                                <span class="design-para">Banglore, India</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -205,58 +239,88 @@
                 <div class="job-application_txt">
                     <h3>Let’s hear from our employees and job applicants</h3>
                 </div>
-                <!-- <div class="testmonial-slide">
-                    <div class="myslide">
-                        <q>“ I always had passion to work for a start-up
+                <div class="testmonial-slide">
+                    <div class="show-testmonia">
+                        <blockquote>
+                            “ I always had passion to work for a start-up
                             as I belived that my voice will be heard. After
                             joing shoptrade I made my voice in even a
                             small decision made. Thank you team. looking
-                            for lot more bright years here. “</q>
-                        <img src="./assets/images/Ellipse 6.svg" alt="">
-                        <p>Bhanu Kowshik</p>
+                            for lot more bright years here. “
+                        </blockquote>
+
+                        <div class="flex-test-container">
+                            <img src="./assets/images/Ellipse 6.svg" alt="">
+                            <div class="text">
+                                <p class="mt">
+                                    Bhanu Kowshik
+                                </p>
+                                <p class="th">
+                                    Product Designer
+                                </p>
+
+                            </div>
+                            <div class="location">
+                                <img src="./assets/images/location.svg" alt="location">
+                                <span>Srilanka</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="myslide">
-                        <q>“ I always had passion to work for a start-up
+                    <div class="show-testmonia hide-testmonia">
+                        <blockquote>
+                            “ I always had passion to work for a start-up
                             as I belived that my voice will be heard. After
                             joing shoptrade I made my voice in even a
-                            small decision made. “</q>
-                        <img src="./assets/images/Ellipse 7.svg" alt="">
-                        <p></p>
+                            small decision made. “
+                        </blockquote>
+
+                        <div class="flex-test-container sub_flex-container">
+                            <img src="./assets/images/Ellipse 7.svg" alt="">
+                            <div class="text">
+                                <p class="mt">
+                                    Rahul Dravid
+                                </p>
+                                <p class="th">
+                                    Mid-level Front end engineer
+                                </p>
+
+                            </div>
+
+                            <div class="location">
+                                <img src="./assets/images/location.svg" alt="location">
+                                <span>India</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="myslide">
-                        <q>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus cumque, odit aliquid, nisi
-                            nobis corporis dolorum dolor natus a eveniet, dignissimos earum! Ducimus sed neque
-                            consequatur voluptatum hic alias fugiat?<q>
-                                <img src="./assets/images/Ellipse 6.svg" alt="">
-                                <p>Deepak Shaha</p>
-                    </div>
-                     <a class="prev" onclick="plusSlides(-1)">❮</a> 
-                     <a class="next" onclick="plusSlides(1)">❯</a> 
+
+
                 </div>
-                <div class="dot-container">
-                    
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-                  </div>-->
-                  
-            </div> 
+                <div class="slide-bar">
+                    <img src="./assets/images/arrow-left-1.svg" alt="arrow-left" class="arrow-left">
+                    <img src="./assets/images/do1 -1.svg" alt="do1" class="dot">
+                    <img src="./assets/images/dot-2.svg" alt="dot-2" class="dot">
+                    <img src="./assets/images/arrow-right-1.svg" alt="arrow-right-1" class="arrow-right">
+                </div>
+
+            </div>
         </div>
     </section>
 
     <!-- section testmonial slide end -->
 
-<!-- section application and email contact end -->
-<section class="last_section">
-    <div class="container">
-        <div class="application-txt">
-            <h3>“We can’t wait to see your application!”</h3>
-            <p>Didn’t find anything that catches your eye? Email us your CV at <a href="">careers@shoptrade.co</a>, and we’ll be in touch</p>
+    <!-- section application and email contact end -->
+    <section class="last_section">
+        <div class="container">
+            <div class="application-txt">
+                <h3>“We can’t wait to see your application!”</h3>
+                <p>Didn’t find anything that catches your eye? Email us your CV at <a href="">careers@shoptrade.co</a>,
+                    and we’ll be in touch</p>
+            </div>
         </div>
-    </div>
-</section>
-<!-- section application and email contact end -->
+    </section>
+    <!-- section application and email contact end -->
+
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

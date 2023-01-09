@@ -136,8 +136,8 @@ table {
 
 /*  */
 
-:root{
-    --orange-color:#ED4E08;
+:root {
+    --orange-color: #ED4E08;
 }
 
 body {
@@ -148,7 +148,9 @@ body {
     font-weight: 500;
     /* background: #E5E5E5; */
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /*  start header section */
 
 /* section text and image  */
@@ -274,7 +276,7 @@ body {
     color: #FFFFFF;
 }
 
-.btn_class{
+.btn_class {
     display: block;
     padding-bottom: 88px;
     font-weight: 700;
@@ -287,14 +289,17 @@ body {
 .btn_class:hover {
     text-decoration: none;
 }
+
 .btn_class .arrow-icon {
     display: inline-block;
     transform: translateX(0px);
     transition: all 0.3s ease-in;
 }
-.btn_class:hover .arrow-icon{
+
+.btn_class:hover .arrow-icon {
     transform: translateX(15px);
-} 
+}
+
 .btn_class svg {
     padding-left: 9px;
     width: 12px;
@@ -329,7 +334,6 @@ body {
 }
 
 .tablink {
-    margin-right: 94px;
     padding: 17px 20px;
     border: none;
     background: transparent;
@@ -339,20 +343,30 @@ body {
     cursor: pointer;
 }
 
+.padding-left {
+    margin-right: 77px;
+}
+
+.btn-text {
+    margin-left: 94px;
+}
+
 .tablink.active {
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 1px rgba(57, 57, 57, 0.14);
     border-radius: 10px;
 }
-.position-btn{
-    min-height: 650px;
+
+.num-position {
+    min-height: 588px;
 }
+
 .hire-position.tabcontent-active.tabcontent-active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 65px;
-    row-gap: 30px;
+    row-gap: 51px;
     padding-top: 51px;
 }
 
@@ -381,9 +395,11 @@ body {
     background: #ED4E08;
     color: #FFFFFF
 }
-.design:hover  .design-para{
+
+.design:hover .design-para {
     color: #FFFFFF;
 }
+
 .hire-position {
     display: none;
 }
@@ -413,8 +429,8 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    column-gap: 83px;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    column-gap: 78px;
     row-gap: 33px;
     padding-bottom: 43px;
 }
@@ -453,6 +469,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     column-gap: 70px;
     row-gap: 20px;
+    margin-top: 63px;
 }
 
 .flex-test-container {
@@ -462,6 +479,7 @@ body {
 }
 
 .text {
+    display: flex;
     padding-left: 15px;
 
 }
@@ -493,13 +511,24 @@ blockquote {
 
 
 }
-
+/* 
 .sub_flex-container {
     margin-top: 50px;
+} */
+
+.testmonia-img {
+    margin: 0 0 18px 18px;
 }
 
 .location {
+
     padding-left: 106px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.location img {
+    padding-right: 10px;
 }
 
 .slide-bar {
@@ -555,7 +584,7 @@ blockquote {
 
 /* start media queries */
 /* media query for desktop(1042px) */
-@media screen and (max-width:1042px) {
+/* @media screen and (max-width:1042px) {
 
     .view-btn {
         padding: 20px 17px;
@@ -564,7 +593,7 @@ blockquote {
     .location {
         padding-left: 80px;
     }
-}
+} */
 
 /* media query for tab(980px)*/
 @media screen and (max-width:980px) {
@@ -610,13 +639,19 @@ blockquote {
     /* .btn-text {
         margin-top: 30px;
     } */
+    .num-position {
+        min-height: 650px;
+    }
 
     .feature-design-btn {
         display: flex;
     }
 
-    .location {
+    /* .location {
         padding-left: 38px;
+    } */
+    .testmonial-slide {
+        margin-top: 48px;
     }
 
     /* section text and image end */
@@ -633,10 +668,12 @@ blockquote {
 
     /* section text and image  */
     .left-txt-para {
-        padding-top: 34px;
+        padding-top: 20px;
         font-size: 18px;
     }
-
+    .left-text h2{
+        font-size: 35px;
+    }
     .shoptrade-txt p {
         font-size: 20px;
     }
@@ -659,6 +696,7 @@ blockquote {
     }
 
     .btn-text {
+        margin-left: 0;
         margin-top: 30px;
     }
 
@@ -669,8 +707,9 @@ blockquote {
     }
 
     /* section text ,featured ,design and engineering */
-    .testmonial-slide{
+    .testmonial-slide {
         grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
+        margin-top: 25px;
     }
 
     .hide-testmonia {
@@ -700,9 +739,11 @@ blockquote {
         width: 185px;
         margin: 0 auto;
     }
-    .block_img{
+
+    .block_img {
         width: 100%;
     }
+
     /* section text and image  */
     .left-text {
         padding-top: 30px;
@@ -725,9 +766,15 @@ blockquote {
         line-height: 22px;
     }
 
+    .view-btn .btn-txt {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
     .view-btn {
         margin-top: 20px;
-        padding: 15px 0 16px 5px;
+        padding: 15px 0 16px 18px;
     }
 
     .view-btn a {
@@ -774,25 +821,31 @@ blockquote {
         padding-bottom: 29px;
     }
 
+
     .tablink {
         font-size: 15px;
         line-height: 22px;
         padding: 9px 25px;
         margin-right: 0;
     }
-    .testmonial-slide{
+
+    .testmonial-slide {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
     }
-    .flex-test-container{
-        flex-direction: column;
-    }
-    .location{
+
+    .location {
+        font-size: 14px;
+        line-height: 21px;
         padding-left: 0;
-        margin-bottom: 10px;
+        margin: 15px 0;
     }
-    .text{
+
+    .text {
+        flex-direction: column;
+        padding-left: 58px;
         margin-top: 10px;
     }
+
     /* section section 5 grid container */
     .grid-container {
         padding-bottom: 25px;
@@ -830,6 +883,7 @@ blockquote {
     .application-txt h3 {
         font-size: 25px;
         line-height: 38px;
+        margin: 0 14px;
     }
 
     .application-txt p {
@@ -839,9 +893,11 @@ blockquote {
     }
 
     /* section text ,featured ,design and engineering */
-    .hire-position.tabcontent-active.tabcontent-active{
-        grid-template-columns: repeat(auto-fill, minmax(245px, 1fr))
+    .hire-position.tabcontent-active.tabcontent-active {
+        grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+        row-gap: 20px;
     }
+
     .design h6 {
         font-size: 15px;
         line-height: 22px;
@@ -851,7 +907,7 @@ blockquote {
     .design-para {
         font-size: 14px;
         line-height: 21px;
-        padding-bottom: 19px;
+        padding: 0 110px 19px 29px;
     }
 
     blockquote {
